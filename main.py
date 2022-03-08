@@ -1,10 +1,10 @@
 
-import requests  # pip install requests
-import re  # pip install regex
+import requests
+import re
 
-from bs4 import BeautifulSoup  # pip install beautifulsoup4
-from gtts import gTTS  # pip install gTTS
-from playsound import playsound  # pip install playsound
+from bs4 import BeautifulSoup
+from gtts import gTTS
+from playsound import playsound
 from datetime import date
 
 
@@ -21,7 +21,7 @@ def grab_scripture(soup):
     return scripture, paragraph
 
 
-def clean_up_text(text_to_clean):
+def clean_up_text(paragraph):
     # Regex Command, remove any parentheses in text, and then remove the trailing Watchtower link that begins with w1 or w2 for watchtower year
     modified_paragraph = re.sub(r"\([^()]*\)", "", paragraph)
     modified_paragraph = re.sub(r"\w[1-2](.*)", "", modified_paragraph)
