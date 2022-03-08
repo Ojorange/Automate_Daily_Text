@@ -1,10 +1,10 @@
 # Automate_Daily_Text
 
-#### Video Demo: <URL HERE>
+#### Video Demo: https://youtu.be/YtDu9tz092w
 
 #### Description:
 
-I always end up forgetting to read the Daily Text. So I made this script to play it out loud, and automated it to run on startup.
+I always end up forgetting to read the Daily Text. So I made this script to grab it from wol.jw.org, play it out loud, and automated it to run on startup.
 
 ## Setup
 
